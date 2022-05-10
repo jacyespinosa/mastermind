@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Merriweather', serif;
+  background-color: #87ceeb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-family: 'Oleo Script Swash Caps', cursive;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+li {
+  padding: 5px;
+}
+
+.container {
+  display: flex;
+}
+
+.home-container {
+    height: 700px;
+    width: 700px;
+}
+
+.slots-container {
+  height: 700px;
+  width: 700px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1em;
+}
+
+.button-container {
+  margin-top: 5px;
+  text-align: center;
+}
+
+.guess-remaining {
+  margin-bottom: 5px;
+  text-align: right;
+  padding-right: 10px;
+}
+
+div.ui.input {
+  width: 100px;
+}
+
+.form-out .mb-4{
+  width: 100px;
+}
+
+.feedback {
+  width: 105px;
+  padding-top: 8px;
+  border-radius: 30px;
+  border: #FF6347 solid;
+  text-align: center;
+}
+
+.button {
+  width: 100px;
+  height: 38px;
+}
+
+::placeholder {
+  text-align: center;
+}
+
+input:placeholder-shown {
+  text-align: center;
+}
+
+.level-of-difficulty {
+  text-align: center;
+  margin-top: 25px;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&family=Oleo+Script+Swash+Caps&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"/>
+    <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet"/>
+    <title>Mastermind</title>
+</head>
+<body>
+    <form method="post">
+    <div class="home-container">
+        <div class="game-overview">
+            <h1 style="margin-bottom: 10px;">How To Play Mastermind</h1>
+            <ul>
+                <li>
+                    This is a game where a player tries to guess the number combinations.
+                </li>
+                <li>
+                    Player must select a number <b><u>between 0-7</u></b>.
+                    <ul style="margin-left: 40px;">
+                        <li>
+                            You have an option to change this to make it more challenging. Change the option below.
+                        </li>
+                        <li>
+                            <b>**Note that duplicate numbers could exist in the Mastermind's code.</b>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    At the end of each attempt to guess
+                    the 4 number combinations, the computer will provide feedback whether the player had guess a number
+                    correctly, or/and position correctly.
+                    <ul style="margin-left: 40px;">
+                        <li>
+                           '1' -> Number is in the combination and in the CORRECT position.
+                        </li>
+                        <li>
+                           '2' -> Number is in the combination but in the WRONG position.
+                        </li>
+                        <li>
+                            <b>**Note that the computer’s feedback does <u>NOT</u> reveal which number the player guessed correctly.</b>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    A player must guess the right number combinations within
+                    10 attempts to win the game.
+
+                </li>
+            </ul>
+
+        </div>
+
+             <div class="level-of-difficulty">
+                <label>
+                    <em>Choices of Numbers:</em>
+                </label>
+                <select name="numbers">
+                    <option value="7" selected>Default: 0-7</option>
+                    <option value="10">0-10</option>
+                    <option value="15">0-15</option>
+                </select>
+             </div>
+
+            <div class="button-container">
+               <button class="ui button" style="width: fit-content; margin-top: 35px;" name="press-play" value="play"><a style=" color: dodgerblue;">Play Mastermind</a></button>
+            </div>
+
+        </div>
+    </form>
+
+    </body>
+</html>
